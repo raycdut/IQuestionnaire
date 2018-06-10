@@ -4,9 +4,17 @@ import { CommonModule } from '@angular/common';
 import { MyQuestionnaireRoutingModule } from './my-questionnaire-routing.module';
 import { QuestionnaireLayoutComponent } from './questionnaire-layout/questionnaire-layout.component';
 import { LayoutModule } from '@angular/cdk/layout';
-import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule, MatGridListModule, MatCardModule, MatMenuModule } from '@angular/material';
+import { MatToolbarModule,
+  MatButtonModule,
+  MatSidenavModule,
+  MatIconModule,
+  MatListModule,
+  MatGridListModule,
+  MatCardModule,
+  MatMenuModule } from '@angular/material';
 import { QuestionnaireCreateComponent } from './questionnaire-create/questionnaire-create.component';
 import { QuestionnaireDashboardComponent } from './questionnaire-dashboard/questionnaire-dashboard.component';
+import { QuestionnaireSummaryCardComponent } from './questionnaire-summary-card/questionnaire-summary-card.component';
 
 @NgModule({
   imports: [
@@ -22,7 +30,11 @@ import { QuestionnaireDashboardComponent } from './questionnaire-dashboard/quest
     MatCardModule,
     MatMenuModule
   ],
-  declarations: [QuestionnaireLayoutComponent, QuestionnaireCreateComponent, QuestionnaireDashboardComponent],
+  declarations: [
+    QuestionnaireLayoutComponent,
+    QuestionnaireCreateComponent,
+    QuestionnaireDashboardComponent,
+    QuestionnaireSummaryCardComponent],
   exports: []
 })
 export class MyQuestionnaireModule { }
