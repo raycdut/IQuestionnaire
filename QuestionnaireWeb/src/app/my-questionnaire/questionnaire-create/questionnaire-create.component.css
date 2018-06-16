@@ -1,0 +1,16 @@
+.editor-card {
+  /* position: relative; */
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  background-color: gray;
+}
+
+.grid-container {
+  margin: 20px;
+}
+
+mat-grid-tile {
+  background: lightblue;
+}

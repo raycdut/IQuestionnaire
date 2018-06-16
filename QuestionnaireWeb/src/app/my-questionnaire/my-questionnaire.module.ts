@@ -11,6 +11,8 @@ import { MatToolbarModule,
   MatListModule,
   MatGridListModule,
   MatCardModule,
+  MatDividerModule,
+  MatExpansionModule,
   MatMenuModule } from '@angular/material';
 import { QuestionnaireCreateComponent } from './questionnaire-create/questionnaire-create.component';
 import { QuestionnaireDashboardComponent } from './questionnaire-dashboard/questionnaire-dashboard.component';
@@ -28,7 +30,9 @@ import { QuestionnaireSummaryCardComponent } from './questionnaire-summary-card/
     MatListModule,
     MatGridListModule,
     MatCardModule,
-    MatMenuModule
+    MatMenuModule,
+    MatDividerModule,
+    MatExpansionModule
   ],
   declarations: [
     QuestionnaireLayoutComponent,

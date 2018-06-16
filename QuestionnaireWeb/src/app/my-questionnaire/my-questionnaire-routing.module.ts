@@ -5,8 +5,8 @@ import { QuestionnaireCreateComponent } from './questionnaire-create/questionnai
 import { QuestionnaireDashboardComponent } from './questionnaire-dashboard/questionnaire-dashboard.component';
 
 const routes: Routes = [
-  {path: '', redirectTo : '/myquestion/manager' , pathMatch: 'full'},
-  {path: 'manager', component: QuestionnaireLayoutComponent, children: [
+ // {path: '', redirectTo : '/myquestion/manager' , pathMatch: 'full'},
+  {path: '', component: QuestionnaireLayoutComponent, children: [
     {path: '', redirectTo: 'dashboard', pathMatch: 'full'},
     {path: 'create', component: QuestionnaireCreateComponent},
     {path: 'dashboard', component: QuestionnaireDashboardComponent}
