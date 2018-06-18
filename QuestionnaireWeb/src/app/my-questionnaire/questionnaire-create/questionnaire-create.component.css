@@ -1,16 +1,51 @@
-.editor-card {
-  /* position: relative; */
-  top: 15px;
-  left: 15px;
-  right: 15px;
-  bottom: 15px;
-  background-color: gray;
+
+#sticktoolbox
+{
+  float: left;
+  background-color: red;
+  position: sticky;
 }
 
-.grid-container {
-  margin: 20px;
+mat-button-toggle-group{
+  position: sticky;
+  position: -webkit-sticky;
+  right: 5px;
+  top:100px;
+  width: 56px;
 }
 
-mat-grid-tile {
-  background: lightblue;
+
+mat-divider{
+  border-style: solid;
+}
+
+.clear-both
+{
+  clear: both;
+}
+
+#editor
+{
+  /* float: left; */
+  position: absolute;
+  min-height: 500px;
+  background-color:rgb(243, 236, 229);
+  width: 600px;
+  left: 60px;
+  top:20px;
+
+  /* margin:auto; */
+
+}
+
+.editorContainer
+{
+  margin:auto;
+  /* background-color: blueviolet; */
+  width: 700px;
+  position: relative;
+
+   min-height: 700px;
+   overflow: auto;
+
 }
