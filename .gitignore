@@ -2,5 +2,6 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 .vs\
-bin\*.*
+bin\
 /QuestionnaireWebApi/.vs/QuestionnaireWebApi/v15/Server/sqlite3
+obj\
