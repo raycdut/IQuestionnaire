@@ -40,6 +40,16 @@ namespace QuestionnaireWebApi
             }
 
             app.UseMvc();
+
+
+            #region Create database if not exists.
+
+            using (var serviceScope = app.ApplicationServices.GetService<IServiceScopeFactory>().CreateScope())
+            {
+                var context = serviceScope.ServiceProvider.GetRequiredService<QuestionnaireContext>();
+                context.Database.EnsureCreated();
+            } 
+            #endregion
         }
     }
 }

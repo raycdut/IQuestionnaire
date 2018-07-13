@@ -8,6 +8,15 @@ namespace QuestionnaireWebApi.Models
 {
     public class QuestionnaireContext : DbContext
     {
+        public QuestionnaireContext(DbContextOptions<QuestionnaireContext> options) : base(options)
+        {
+
+        }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<QuestionnaireQuestions>().HasKey(c => new { c.QuestionnaireId, c.QuestionId });
+        }
         public virtual DbSet<Question> Questions { get; set; }
         public virtual DbSet<Questionnaire> Questionnaires { get; set; }
 
