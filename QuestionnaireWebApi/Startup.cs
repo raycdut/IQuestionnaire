@@ -8,6 +8,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using QuestionnaireWebApi.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace QuestionnaireWebApi
 {
@@ -24,6 +26,9 @@ namespace QuestionnaireWebApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+
+            services.AddDbContext<QuestionnaireContext>(
+                options => options.UseSqlServer(Configuration.GetConnectionString("QuestionnaireContext")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
