@@ -5,3 +5,5 @@
 bin\
 /QuestionnaireWebApi/.vs/QuestionnaireWebApi/v15/Server/sqlite3
 obj\
+/QuestionnaireWebApi/bin/Debug/netcoreapp2.0
+/QuestionnaireWebApi/obj
