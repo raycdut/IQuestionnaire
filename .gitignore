@@ -7,3 +7,4 @@ bin\
 obj\
 /QuestionnaireWebApi/bin/Debug/netcoreapp2.0
 /QuestionnaireWebApi/obj
+/QuestionnaireWebApi/.vs/QuestionnaireWebApi/DesignTimeBuild

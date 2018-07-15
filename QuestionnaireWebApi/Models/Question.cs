@@ -11,7 +11,7 @@ namespace QuestionnaireWebApi.Models
         [Key]
         public int QuestionId { get; set; }
         public string QuestionDescription { get; set; }
-        public string Type { get; set; }
+        public Type Type { get; set; }
 
         public virtual ICollection<QuestionnaireQuestions> QuestionnaireQuestions { get; set; }
     }

@@ -5,6 +5,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Migrations\20180715084911_QuestionnaireWebApi.Models.QuestionnaireContext.cs" />
+    <Compile Remove="Migrations\20180715084911_QuestionnaireWebApi.Models.QuestionnaireContext.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="wwwroot\" />
   </ItemGroup>
 

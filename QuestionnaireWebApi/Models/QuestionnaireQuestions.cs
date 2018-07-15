@@ -14,6 +14,8 @@ namespace QuestionnaireWebApi.Models
         //[Key, Column(Order = 1)]
         public int QuestionId { get; set; }
 
+        public int Order { get; set; }
+
         public virtual Questionnaire Questionnaire { get; set; }
 
         public virtual Question Question { get; set; }
